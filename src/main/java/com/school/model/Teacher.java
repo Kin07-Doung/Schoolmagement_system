@@ -1,21 +1,87 @@
 package com.school.model;
 
 public class Teacher {
-    // TODO: fields
-    // teacherId
-    // teacherName
-    // email
-    // phone
-    // salary
-    // department (Department)
+    private int teacherId;
+    private String teacherName;
+    private String email;
+    private String phone;
+    private double salary;
+    private Department department;
 
-    // TODO: no-arg constructor
+    public Teacher() {
+    }
 
-    // TODO: constructor with all fields
+    public Teacher(int teacherId, String teacherName, String email, String phone, double salary, Department department) {
+        this.teacherId = teacherId;
+        this.teacherName = teacherName;
+        this.email = email;
+        this.phone = phone;
+        this.salary = salary;
+        this.department = department;
+    }
 
-    // TODO: getters and setters
+    public int getTeacherId() {
+        return teacherId;
+    }
 
-    // TODO: method assignToDepartment(Department department)
+    public void setTeacherId(int teacherId) {
+        this.teacherId = teacherId;
+    }
 
-    // TODO: toString()
+    public String getTeacherName() {
+        return teacherName;
+    }
+
+    public void setTeacherName(String teacherName) {
+        this.teacherName = teacherName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public void assignToDepartment(Department department) {
+        this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "teacherId=" + teacherId +
+                ", teacherName='" + teacherName + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", salary=" + salary +
+                ", department=" + (department != null ? department.getName() : "None") +
+                '}';
+    }
 }
+
