@@ -11,7 +11,15 @@ public class Course {
     public Course() {
     }
 
-    public Course(int courseId, String courseName, String description, int credit, Department department, Teacher teacher) {
+    public Course(
+            int courseId, 
+            String courseName, 
+            String description, 
+            int credit, 
+            Department department, 
+            Teacher teacher
+    ) 
+    {
         this.courseId = courseId;
         this.courseName = courseName;
         this.description = description;

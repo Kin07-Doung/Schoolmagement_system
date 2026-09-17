@@ -13,7 +13,17 @@ public class Department {
     public Department() {
     }
 
-    public Department(int id, String name, String code, String location, int budget, int managerId, int IsActive, String createdDate) {
+    public Department(
+        int id, 
+        String name, 
+        String code, 
+        String location, 
+        int budget, 
+        int managerId, 
+        int IsActive, 
+        String createdDate
+    ) 
+    {
         this.id = id;
         this.name = name;
         this.code = code;
